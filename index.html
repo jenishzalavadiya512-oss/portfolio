@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -335,6 +336,16 @@
             text-decoration: none;
         }
 
+        a.project-link {
+            text-decoration: none;
+        }
+
+        .project-image img {
+            height: 100%;
+            width: 100%;
+            object-fit: contain;
+        }
+
         /* Footer */
         footer {
             text-align: center;
@@ -349,6 +360,7 @@
                 opacity: 0;
                 transform: translateY(30px);
             }
+
             to {
                 opacity: 1;
                 transform: translateY(0);
@@ -356,9 +368,12 @@
         }
 
         @keyframes float {
-            0%, 100% {
+
+            0%,
+            100% {
                 transform: translateY(0);
             }
+
             50% {
                 transform: translateY(-30px);
             }
@@ -408,18 +423,26 @@
         }
 
         @keyframes bounce {
-            0%, 20%, 50%, 80%, 100% {
+
+            0%,
+            20%,
+            50%,
+            80%,
+            100% {
                 transform: translateX(-50%) translateY(0);
             }
+
             40% {
                 transform: translateX(-50%) translateY(-20px);
             }
+
             60% {
                 transform: translateX(-50%) translateY(-10px);
             }
         }
     </style>
 </head>
+
 <body>
     <!-- Navigation -->
     <nav>
@@ -435,17 +458,18 @@
     <section id="home" class="hero">
         <div class="floating-element float-1"></div>
         <div class="floating-element float-2"></div>
-        
+
         <div class="hero-content">
             <h1>Shopify Developer</h1>
             <h2>Crafting Beautiful E-Commerce Experiences</h2>
-            <p>Transforming ideas into stunning Shopify stores with custom themes, seamless integrations, and performance optimization.</p>
+            <p>Transforming ideas into stunning Shopify stores with custom themes, seamless integrations, and
+                performance optimization.</p>
             <div class="cta-buttons">
                 <a href="#projects" class="btn btn-primary">View My Work</a>
                 <a href="#contact" class="btn btn-secondary">Get In Touch</a>
             </div>
         </div>
-        
+
         <div class="scroll-indicator"></div>
     </section>
 
@@ -456,32 +480,30 @@
             <div class="skill-card">
                 <div class="skill-icon">🎨</div>
                 <h3>Custom Theme Development</h3>
-                <p>Building pixel-perfect, responsive Shopify themes from scratch using Liquid, HTML, CSS, and JavaScript.</p>
+                <p>Building pixel-perfect, responsive Shopify themes from scratch using Liquid, HTML, CSS, and
+                    JavaScript.</p>
             </div>
-            
-            <div class="skill-card">
-                <div class="skill-icon">🔌</div>
-                <h3>App Integration</h3>
-                <p>Seamlessly integrating third-party apps and custom solutions using Shopify APIs and webhooks.</p>
-            </div>
-            
-            <div class="skill-card">
-                <div class="skill-icon">📱</div>
-                <h3>Responsive Design</h3>
-                <p>Creating mobile-first, responsive designs that look amazing on all devices and screen sizes.</p>
-            </div>
-            
-            <div class="skill-card">
-                <div class="skill-icon">🛒</div>
-                <h3>Checkout Customization</h3>
-                <p>Enhancing the checkout experience with custom fields, validations, and seamless payment flows.</p>
-            </div>
-            
+
             <div class="skill-card">
                 <div class="skill-icon">🚀</div>
                 <h3>Store Migration</h3>
                 <p>Migrating stores from other platforms to Shopify with zero downtime and data integrity.</p>
             </div>
+
+            <div class="skill-card">
+                <div class="skill-icon">📱</div>
+                <h3>Responsive Design</h3>
+                <p>Creating mobile-first, responsive designs that look amazing on all devices and screen sizes.</p>
+            </div>
+
+            <div class="skill-card">
+                <div class="skill-icon">🔌</div>
+                <h3>App Integration</h3>
+                <p>Seamlessly integrating third-party apps and custom solutions using Shopify APIs and webhooks.</p>
+            </div>
+
+            
+
         </div>
     </section>
 
@@ -490,43 +512,163 @@
         <h2 class="section-title">Featured Projects</h2>
         <div class="projects-grid">
             <div class="project-card">
-                <div class="project-image">🏪</div>
+                <a class="project-link" href="https://appointed.co/" target="_blank">
+                    <div class="project-image"><img src="./Image/Appointed_img.png"></div>
+                    <div class="project-content">
+                        <h3>Appointed</h3>
+                        <p>Appointed is a design-driven brand crafting timeless planners, notebooks, and stationery for
+                            the inspired and organized.</p>
+                        <div class="project-tags">
+                            <span class="tag">Liquid</span>
+                            <span class="tag">JavaScript</span>
+                            <span class="tag">HTML</span>
+                            <span class="tag">CSS</span>
+                        </div>
+                    </div>
+                </a>
+            </div>
+
+            <div class="project-card">
+                <a class="project-link" href="https://ka-pok.com/" target="_blank">
+                <div class="project-image"><img src="./Image/Kapok_img.png"></div>
                 <div class="project-content">
-                    <h3>Fashion Store Theme</h3>
-                    <p>Custom Shopify theme for a luxury fashion brand with advanced filtering, quick view, and wishlist functionality.</p>
+                    <h3>Kapok</h3>
+                    <p>Kapok is a Hong Kong–based, curated lifestyle and fashion boutique specialising in international
+                        “future-classic” brands.</p>
                     <div class="project-tags">
                         <span class="tag">Liquid</span>
                         <span class="tag">JavaScript</span>
+                        <span class="tag">HTML</span>
                         <span class="tag">CSS</span>
                     </div>
                 </div>
+                </a>
             </div>
-            
+
             <div class="project-card">
-                <div class="project-image">⚙️</div>
+                <a class="project-link" href="https://asociety.com/" target="_blank">
+                <div class="project-image"><img src="./Image/A-Society-img.png"></div>
                 <div class="project-content">
-                    <h3>Product Configurator</h3>
-                    <p>Interactive product customization tool with real-time preview and dynamic pricing calculations.</p>
+                    <h3>A Society</h3>
+                    <p>A Society is a premium eyewear brand crafting high-performance, design-driven goggles for modern
+                        explorers.</p>
                     <div class="project-tags">
-                        <span class="tag">Shopify API</span>
-                        <span class="tag">React</span>
-                        <span class="tag">GraphQL</span>
+                        <span class="tag">Liquid</span>
+                        <span class="tag">JavaScript</span>
+                        <span class="tag">HTML</span>
+                        <span class="tag">CSS</span>
                     </div>
                 </div>
+                </a>
             </div>
-            
+
             <div class="project-card">
-                <div class="project-image">📊</div>
+                <a class="project-link" href="https://lmzcoffee.com/" target="_blank">
+                <div class="project-image"><img src="./Image/lmzcoffee-img.png"></div>
                 <div class="project-content">
-                    <h3>Analytics Dashboard</h3>
-                    <p>Custom admin dashboard for tracking store metrics, inventory, and customer insights in real-time.</p>
+                    <h3>lmzcoffee</h3>
+                    <p>A Hong Kong–based roastery delivering thoughtfully curated single-origin and blend coffees with
+                        clarity, balance, and character.</p>
                     <div class="project-tags">
-                        <span class="tag">Admin API</span>
-                        <span class="tag">Node.js</span>
-                        <span class="tag">Charts</span>
+                        <span class="tag">Liquid</span>
+                        <span class="tag">JavaScript</span>
+                        <span class="tag">HTML</span>
+                        <span class="tag">CSS</span>
                     </div>
                 </div>
+                </a>
             </div>
+
+            <div class="project-card">
+                <a class="project-link" href="https://www.kombiontap.com/" target="_blank">
+                <div class="project-image"><img src="./Image/kombi_img.png"></div>
+                <div class="project-content">
+                    <h3>Kombi</h3>
+                    <p>Kombi is a mobility brand that makes the Cool Tap — a portable, non-electric kegerator for
+                        perfectly chilled draft drinks anywhere.</p>
+                    <div class="project-tags">
+                        <span class="tag">Liquid</span>
+                        <span class="tag">JavaScript</span>
+                        <span class="tag">HTML</span>
+                        <span class="tag">CSS</span>
+                        <span class="tag">Page Fly App</span>
+                    </div>
+                </div>
+                </a>
+            </div>
+
+            <div class="project-card">
+                <a class="project-link" href="https://marsdancefuture.com/" target="_blank">
+                <div class="project-image"><img src="./Image/Marsdance-Future-img.png"></div>
+                <div class="project-content">
+                    <h3>Marsdance Future</h3>
+                    <p>Marsdance Future is a high-performance Tesla accessory brand offering a smart front display and
+                        advanced racing-style yoke for Model 3 and Model Y.</p>
+                    <div class="project-tags">
+                        <span class="tag">Liquid</span>
+                        <span class="tag">JavaScript</span>
+                        <span class="tag">HTML</span>
+                        <span class="tag">CSS</span>
+                        <span class="tag">Page Fly App</span>
+                    </div>
+                </div>
+                </a>
+            </div>
+
+            <div class="project-card">
+                <a class="project-link" href="https://dogcloudbeds.com/" target="_blank">
+                <div class="project-image"><img src="./Image/Dog-Cloud-img.jpg"></div>
+                <div class="project-content">
+                    <h3>Dog Cloud</h3>
+                    <p>Dog Cloud is a wellness-driven pet brand that makes a smart massage therapy dog bed using
+                        FDA-approved vibration technology to relieve joint pain, boost mobility, and calm anxiety.</p>
+                    <div class="project-tags">
+                        <span class="tag">Liquid</span>
+                        <span class="tag">JavaScript</span>
+                        <span class="tag">HTML</span>
+                        <span class="tag">CSS</span>
+                        <span class="tag">Page Fly App</span>
+                    </div>
+                </div>
+                </a>
+            </div>
+
+            <div class="project-card">
+                <a class="project-link" href="https://buddydesign.co/" target="_blank">
+                <div class="project-image"><img src="./Image/Buddy-Design-img.jpg"></div>
+                <div class="project-content">
+                    <h3>Buddy Design</h3>
+                    <p>Buddy Design is a NYC-based wellness brand that makes portable mood lamps blending tactile
+                        interaction, calming color gradients, and emotional connection.</p>
+                    <div class="project-tags">
+                        <span class="tag">Liquid</span>
+                        <span class="tag">JavaScript</span>
+                        <span class="tag">HTML</span>
+                        <span class="tag">CSS</span>
+                        <span class="tag">Page Fly App</span>
+                    </div>
+                </div>
+                </a>
+            </div>
+
+            <div class="project-card">
+                <a class="project-link" href="https://www.hygreentool.com/" target="_blank">
+                <div class="project-image"><img src="./Image/HYgreen-img.png"></div>
+                <div class="project-content">
+                    <h3>HYgreen</h3>
+                    <p>HYgreen creates smart, wire-free robotic lawn mowers that bring precision, sustainability and
+                        effortless yard care together.</p>
+                    <div class="project-tags">
+                        <span class="tag">Liquid</span>
+                        <span class="tag">JavaScript</span>
+                        <span class="tag">HTML</span>
+                        <span class="tag">CSS</span>
+                        <span class="tag">Page Fly App</span>
+                    </div>
+                </div>
+                 </a>
+            </div>
+           
         </div>
     </section>
 
@@ -537,26 +679,17 @@
             <p style="font-size: 1.2rem; color: #aaa; margin-bottom: 2rem;">
                 Ready to take your Shopify store to the next level? Let's discuss your project!
             </p>
-            
+
             <div class="contact-info">
                 <div class="contact-item">
                     <div class="contact-icon">📧</div>
-                    <a href="mailto:hello@shopifydev.com">hello@shopifydev.com</a>
-                </div>
-                
-                <div class="contact-item">
-                    <div class="contact-icon">💼</div>
-                    <a href="#">LinkedIn</a>
-                </div>
-                
-                <div class="contact-item">
-                    <div class="contact-icon">🐙</div>
-                    <a href="#">GitHub</a>
+                    <a href="mailto:jenish.zalavadiya512@gmail.com">jenish.zalavadiya512@gmail.com</a>
+                    <a href="tel:8690761698">8690761698</a>
                 </div>
             </div>
-            
+
             <div style="margin-top: 3rem;">
-                <a href="mailto:hello@shopifydev.com" class="btn btn-primary">Start a Project</a>
+                <a href="mailto:jenish.zalavadiya512@gmail.com" class="btn btn-primary">Start a Project</a>
             </div>
         </div>
     </section>
@@ -608,7 +741,7 @@
         window.addEventListener('scroll', () => {
             let current = '';
             const sections = document.querySelectorAll('section');
-            
+
             sections.forEach(section => {
                 const sectionTop = section.offsetTop;
                 const sectionHeight = section.clientHeight;
@@ -629,7 +762,7 @@
         document.addEventListener('mousemove', (e) => {
             const moveX = (e.clientX * -0.01);
             const moveY = (e.clientY * -0.01);
-            
+
             document.querySelectorAll('.floating-element').forEach((el, index) => {
                 const speed = (index + 1) * 0.5;
                 el.style.transform = `translate(${moveX * speed}px, ${moveY * speed}px)`;
@@ -637,4 +770,5 @@
         });
     </script>
 </body>
+
 </html>
